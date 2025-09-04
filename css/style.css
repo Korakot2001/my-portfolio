@@ -1,0 +1,229 @@
+/*Genral*/
+*{box-sizing: border-box;}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #333;
+}
+a{
+    text-decoration: none;
+}
+/* Navbar */
+
+.logo{
+    color: inherit;
+}
+.navbar{
+    background: #f8f8f8;
+    color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    
+}
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+.menu a, .navbar button{
+   color: inherit;
+}
+.menu a:visited { 
+    color: inherit; /* กันสีม่วงลิงก์ visited */
+}   
+.menu a:hover { color: #000; }
+
+.menu button{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* hero */
+.hero{
+    display: flex;
+    gap: 24px;
+    padding: 48px 20px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+ .profile{
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.highlight{
+    color: #4f46e5;
+}
+
+.dot{
+    list-style-type: disc;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 9px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.btn-group{
+    margin-top: 16px;
+}
+.btn-primary{
+    background: #4a42e3;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.btn-primary:hover{
+    background: #4338ca;
+}
+
+.btn-secondary{
+    border: 1px solid #333;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+}
+.btn-secondary:hover{
+    background: #f0f0f0;
+}
+
+
+/* Section*/
+
+.section{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+}
+
+.section p {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+/*Skills*/
+
+.skills{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px,1fr));
+    gap: 12px;
+}
+
+.skills li{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Projects */
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.img-project{
+    object-fit: cover;
+    width: 100%;
+    height: 10rem;
+
+}
+.card{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+.card div{
+    padding: 12px;
+}
+
+.demo{
+    background: #4a42e3;
+    color: #fff;
+    padding: 5px 12px;
+    text-decoration: none;
+    border-radius: 8px;
+ }
+
+ .document{
+    background: #4a42e3;
+    color: #fff;
+    padding: 5px 12px;
+    text-decoration: none;
+    border-radius: 8px;
+ }
+/* Footer */
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #f8f8f8;
+    font-size: 14px;
+}
+
+/* Dark Mode*/
+.dark-mode{
+    background: #272727;
+    color: #f8f8f8;
+}
+.dark-mode .logo{
+    color: #f8f8f8;
+}
+.dark-mode .navbar , .dark-mode footer{
+    background: #222;
+}
+
+.dark-mode .menu{
+    color:#fff
+}
+
+.dark-mode .menu a:hover { 
+    color:#d0d0d0; 
+}
+.dark-mode .btn-primary{
+    background: #6366f1;
+}
+.dark-mode .btn-secondary{
+    border-color: #ddd; 
+    color: #ddd;
+}
+.dark-mode .menu button {
+  background:#333;
+  border-color:#555;
+  color:#eee;
+}
+
+.dark-mode .card{
+    background:#333;
+  border-color:#555;
+  color:#eee;
+}

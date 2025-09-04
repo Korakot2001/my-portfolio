@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>พอร์ตโฟลิโอ | ชื่อของเจ้านาย</title>
+  <meta name="description" content="พอร์ตโฟลิโอและประวัติย่อของเจ้านาย">
+  <meta name="author" content="ชื่อของเจ้านาย">
+  <link rel="icon" href="images/favicon.png">
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased dark:bg-slate-900 dark:text-slate-100">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-slate-900/70 border-b border-slate-200/60 dark:border-slate-800">
+    <nav class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-semibold">ชื่อของเจ้านาย</a>
+      <div class="space-x-5 text-sm">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <button id="themeToggle" class="px-2 py-1 border rounded text-xs">Dark/Light</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-5xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10">
+    <img src="images/profile.jpg" alt="โปรไฟล์" class="w-40 h-40 rounded-full object-cover ring-2 ring-slate-200 dark:ring-slate-700">
+    <div>
+      <h1 class="text-3xl md:text-5xl font-bold leading-tight">สวัสดีครับ ผมคือ <span class="text-indigo-600 dark:text-indigo-400">ชื่อของเจ้านาย</span></h1>
+      <p class="mt-4 text-slate-600 dark:text-slate-300">
+        นักพัฒนา Frontend ชอบทำเว็บสวย โหลดไว และใช้งานง่าย
+        ถนัด HTML/CSS/JavaScript และเริ่มใช้ React/Node.js
+      </p>
+      <div class="mt-6 flex gap-3">
+        <a href="#projects" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">ดูผลงาน</a>
+        <a href="assets/resume.pdf" class="px-4 py-2 border rounded hover:bg-slate-50 dark:hover:bg-slate-800">ดาวน์โหลดเรซูเม่</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-semibold mb-4">About</h2>
+    <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+      เล่าเกี่ยวกับตัวเองสั้น ๆ เช่น ประสบการณ์ ความสนใจ เป้าหมายการทำงาน
+      จุดเด่น 2–3 ข้อ และเทคโนโลยีที่ชอบใช้งาน
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-semibold mb-6">Skills</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+      <li class="px-3 py-2 border rounded">HTML</li>
+      <li class="px-3 py-2 border rounded">CSS / Tailwind</li>
+      <li class="px-3 py-2 border rounded">JavaScript</li>
+      <li class="px-3 py-2 border rounded">React (พื้นฐาน)</li>
+      <li class="px-3 py-2 border rounded">Node.js (พื้นฐาน)</li>
+      <li class="px-3 py-2 border rounded">Firebase (พื้นฐาน)</li>
+      <li class="px-3 py-2 border rounded">Git / GitHub</li>
+      <li class="px-3 py-2 border rounded">UI/UX (พื้นฐาน)</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-semibold mb-6">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- การ์ดผลงาน 1 -->
+      <article class="border rounded overflow-hidden hover:shadow-lg transition">
+        <img src="images/project-1.jpg" alt="Project 1" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold">ชื่อโปรเจกต์ที่ 1</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">คำอธิบายสั้น ๆ เกี่ยวกับโปรเจกต์ สิ่งที่ใช้เทคโนโลยี</p>
+          <div class="mt-3 flex gap-3 text-sm">
+            <a href="#" class="underline">Demo</a>
+            <a href="#" class="underline">Source</a>
+          </div>
+        </div>
+      </article>
+      <!-- การ์ดผลงาน 2 -->
+      <article class="border rounded overflow-hidden hover:shadow-lg transition">
+        <img src="images/project-2.jpg" alt="Project 2" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold">ชื่อโปรเจกต์ที่ 2</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">สรุปสิ่งที่ทำ บทบาท และผลลัพธ์</p>
+          <div class="mt-3 flex gap-3 text-sm">
+            <a href="#" class="underline">Demo</a>
+            <a href="#" class="underline">Source</a>
+          </div>
+        </div>
+      </article>
+      <!-- การ์ดผลงาน 3 -->
+      <article class="border rounded overflow-hidden hover:shadow-lg transition">
+        <img src="images/project-3.jpg" alt="Project 3" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold">ชื่อโปรเจกต์ที่ 3</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">ปัญหาที่แก้ วิธีแก้ และเทคโนโลยีที่ใช้</p>
+          <div class="mt-3 flex gap-3 text-sm">
+            <a href="#" class="underline">Demo</a>
+            <a href="#" class="underline">Source</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-5xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+    <p class="text-slate-700 dark:text-slate-300">ติดต่อผมได้ที่:
+      <a href="mailto:you@example.com" class="underline">you@example.com</a> |
+      <a href="https://github.com/yourname" class="underline" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://www.linkedin.com/in/yourname" class="underline" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-sm text-slate-500 dark:text-slate-400">
+    © <span id="year"></span> ชื่อของเจ้านาย. All rights reserved.
+  </footer>
+
+  <script>
+    // ปีปัจจุบัน
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Toggle Dark/Light
+    const btn = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark') root.classList.add('dark');
+
+    btn.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
