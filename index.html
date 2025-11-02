@@ -1,134 +1,235 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  <head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Portfolio Korakot</title> 
-    <link rel="stylesheet" href="css/style.css"> 
-    <script src="js/script.js"></script> 
-  </head> 
-  <body > 
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- navbar --> 
-     <header class="navbar"> 
-      <nav> 
-        <a href="#" class="logo">KORAKOT</a> 
-        <div class="menu"> 
-          <a href="#about">about</a> 
-          <a href="#skills">Skills</a> 
-          <a href="#Project">Project</a> 
-          <a href="#contact">contact</a> 
-          <button class="themeToggle">Dark/Linght</button> 
-        </div> 
-      </nav> 
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Korakot</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!-- Hero --> 
-     <section class="hero"> 
-      <img src="imges/profile_1X1.jpg" alt="โปรไฟล์" class="profile"> 
-      <div> 
-        <h1>สวัสดีครับ ผม <span class="highlight">นาย กรกช ไตรอุโฆษ</span></h1> 
-        <p > 
-          ผมมีชือเล่นว่าป๋อ เป็นนักศึกษาที่มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา 
-          คณะวิศวกรรมศาสตร์ สาขาววิศวกรรมคอมพิวเตอร์
-          
-           
-        </p> 
-        <div class="btn-group"> 
-          <a href="#projects" class="btn-primary">ดูผลงาน</a> 
-          <a href="assets/RERUME TH.pdf" class="btn-secondary">ดาวน์โหลดเรซูเม่</a> 
-        </div> 
-      </div> 
-    </section> 
-    <!-- About--> 
-     <section id="about" class="section"> 
-      <h2>About me</h2> 
-      <P>
-        ผมมีชือเล่นว่า<span class="highlight"> ป๋อ </span>
-        เป็นนักศึกษาที่มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา 
-        คณะวิศวกรรมศาสตร์ สาขาววิศวกรรมคอมพิวเตอร์ 
-        ผมเป็นคนที่สนใจหลายๆด้าน ทั้งด้านซอฟต์แวร์และฮาร์ดแวร์
-        โดยเฉพาะงานพัฒนาโปรแกรม ไม่ว่าจะเป็น
-        <ul class="dot">
-          <li>Software Tester</li>
-          <li>Front-end Developer</li>
-          <li>Game Developer</li>
-        </ul>
-      </P>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <header class="navbar">
+    <nav>
+      <a href="#" class="logo">KORAKOT</a>
+      <div class="menu">
+        <a href="#about">about</a>
+        <a href="#skills">Skills</a>
+        <a href="#Project">Project</a>
+        <a href="#contact">contact</a>
+        <button class="themeToggle">Dark/Linght</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="imges/profile_1X1.jpg" alt="โปรไฟล์" class="profile">
+    <div>
+      <h1>สวัสดีครับ ผม <span class="highlight">นาย กรกช ไตรอุโฆษ</span></h1>
       <p>
-        นอกจากด้านซอฟต์แวร์แล้วยังมีความรู้ด้านอุปกรณ์อิเล็กทรอนิกส์ และมีพื้นฐานทาง Network ด้วย
-        เว็บไซต์นี้ผมทำขึ้นมาเพื่อรวบรวม ผลงานและประสบการณ์ ของผมทั้งหมด และจะค่อย ๆ 
-        พัฒนาไปเรื่อย ๆ ตามเส้นทางการเรียนรู้ของผมครับ
-      </p> 
-    </section> 
-    <!-- Skill --> 
-     <section id="skills" class="section"> 
-      <h2>Skills</h2> <ul class="skills"> 
-        <li>QA mannual</li>
-        <li>HTML</li> 
-        <li>CSS</li>
-        <li>Network</li>
-        <li>English</li>
-        <li>React (พื้นฐาน)</li> 
-        <li>Node.js(พื้นฐาน)</li> 
-        <li>UX/UI (พื้นฐาน)</li>  
-        <li>Lua (พื้นฐาน)</li>
-        <li>C# (พื้นฐาน)</li>
-        <li>JavaScript (พื้นฐาน)</li> 
-      </ul> 
-    </section> 
-    <!-- Projects --> 
-     <section id="projects" class="section"> 
-      <h2>Project</h2> 
-      <div class="projects"> 
-        <!-- ผลงานที่1 --> 
-         <article class="card"> 
-          <img src="imges/project1.png" alt="Project 1" class="img-project"> 
-          <div> 
-            <h3>Web Portfolio</h3> 
-            <p>เป็นเว็บที่เอาไว้สลับแนะนำตัวเองและบ่งบอกความสารารถที่ตัวเองมี
-              โดยการใช้ความรู้ที่สะสมมาทางด้าน Frontend  HTML CSS JavaScript
-              และความรู้ด้าน backend นั้นคือการอัฟโหลดขึ้นออนไลน์
-            </p>
-            </p> 
-            <a href="https://docs.google.com/document/d/15jxt22Pfl0sN5t1oXslwotXDTjUgkUB2gUgjd8fZpwk/edit?tab=t.0#heading=h.xgq3n130zla4" class="document">document</a> 
-          </div> 
-        </article> 
-        <!-- ผลงานที่2 --> 
-         <article class="card"> 
-          <img src="imges/project2.png" alt="Project 2" class="img-project">  
-          <div> 
-            <h3>เว็บไซต์เพิ่มรายชื่อหนัง</h3> 
-            <p>เป็นโครงงานที่ได้รับมอบหมายจากอาจารย์ โดยเว็บไซต์ที่จะเชื่อต่อกับฐานข้อมูล ให้แสดงข้อมูล 
-              และเพิ่มฟังชั่น API ที่จะเพิ่มหรือลดข้อมูลก็ได้
-            </p> 
-            <a href="https://drive.google.com/drive/folders/1_cuosdaaP8Ifa-8rny0yKacfvMnp4-zh?usp=drive_link" class="document">document</a> 
-          </div> </article> 
-          <!-- ผลงานที่3 --> 
-           <article class="card"> 
-            <img src="imges/project3.png" alt="Project 3" class="img-project"> 
-            <div> 
-              <h3>Game Roblox</h3> 
-              <p>มีไอเดียที่อยากจะชุบเกมที่เราเคยรักกลับมาอีกครั้ง แต่ไม่ใช้แบบเดิมแต่เป็นการเริ่มใหม่ทั้งหมดและปรับให้ทันกับยุคสมัยใหม่
-              </p> 
-              <a href="https://www.roblox.com/th/games/124024432246371/start-place" class="demo">Demo</a> | <a href="https://drive.google.com/drive/folders/1ctHio5aHfvvbMvulFF6Lcjqs4lwHldpK?usp=sharing" class="document">document</a>  
-            </div> 
-          </article> 
-        </div> 
-      </section> 
-      <!-- Contact --> 
-       <section id="contact" class="section"> 
-        <h2>contact</h2> 
-        <p> 
-          <a href="mailto:you@example.com">Trkorakot@gmail.com</a> 
-          |
-          <a href="https://github.com/Korakot2001">GitHub</a> 
-          
-        </p> 
-        </section> 
-      <!-- footer --> 
-    <footer>
-      © <span id="year"></span> Korakot. All rights reserved.
-    </footer> 
-  </body> 
+        ผมมีชือเล่นว่าป๋อ เป็นนักศึกษาที่มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา
+        คณะวิศวกรรมศาสตร์ สาขาววิศวกรรมคอมพิวเตอร์
+
+
+      </p>
+      <div class="btn-group">
+        <a href="#projects" class="btn-primary">ดูผลงาน</a>
+        <a href="assets/RERUME TH.pdf" class="btn-secondary">ดาวน์โหลดเรซูเม่</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About-->
+  <section id="about" class="section">
+    <h2>About me</h2>
+    <P>
+      ผมมีชือเล่นว่า<span class="highlight"> ป๋อ </span>
+      เป็นนักศึกษาที่มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา
+      คณะวิศวกรรมศาสตร์ สาขาววิศวกรรมคอมพิวเตอร์
+      ผมเป็นคนที่สนใจหลายๆด้าน ทั้งด้านซอฟต์แวร์และฮาร์ดแวร์
+      โดยเฉพาะงานพัฒนาโปรแกรม ไม่ว่าจะเป็น
+    <ul class="dot">
+      <li>Software Tester</li>
+      <li>Front-end Developer</li>
+      <li>Game Developer</li>
+    </ul>
+    </P>
+    <p>
+      นอกจากด้านซอฟต์แวร์แล้วยังมีความรู้ด้านอุปกรณ์อิเล็กทรอนิกส์ และมีพื้นฐานทาง Network ด้วย
+      เว็บไซต์นี้ผมทำขึ้นมาเพื่อรวบรวม ผลงานและประสบการณ์ ของผมทั้งหมด และจะค่อย ๆ
+      พัฒนาไปเรื่อย ๆ ตามเส้นทางการเรียนรู้ของผมครับ
+    </p>
+  </section>
+  <!-- Skill -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>QA mannual</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Network</li>
+      <li>English</li>
+      <li>React (พื้นฐาน)</li>
+      <li>Node.js(พื้นฐาน)</li>
+      <li>UX/UI (พื้นฐาน)</li>
+      <li>Lua (พื้นฐาน)</li>
+      <li>C# (พื้นฐาน)</li>
+      <li>JavaScript (พื้นฐาน)</li>
+    </ul>
+  </section>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Project</h2>
+    <div class="projects">
+      <!-- ผลงานที่1 -->
+      <article class="card">
+        <img src="imges/project1.png" alt="Project 1" class="img-project">
+        <div>
+          <h3>Web Portfolio</h3>
+          <p>เป็นเว็บที่เอาไว้สลับแนะนำตัวเองและบ่งบอกความสารารถที่ตัวเองมี
+            โดยการใช้ความรู้ที่สะสมมาทางด้าน Frontend HTML CSS JavaScript
+            และความรู้ด้าน backend นั้นคือการอัฟโหลดขึ้นออนไลน์
+          </p>
+          </p>
+          <a href="https://docs.google.com/document/d/15jxt22Pfl0sN5t1oXslwotXDTjUgkUB2gUgjd8fZpwk/edit?tab=t.0#heading=h.xgq3n130zla4"
+            class="document">document</a>
+        </div>
+      </article>
+      <!-- ผลงานที่2 -->
+      <article class="card">
+        <img src="imges/project2.png" alt="Project 2" class="img-project">
+        <div>
+          <h3>เว็บไซต์เพิ่มรายชื่อหนัง</h3>
+          <p>เป็นโครงงานที่ได้รับมอบหมายจากอาจารย์ โดยเว็บไซต์ที่จะเชื่อต่อกับฐานข้อมูล ให้แสดงข้อมูล
+            และเพิ่มฟังชั่น API ที่จะเพิ่มหรือลดข้อมูลก็ได้
+          </p>
+          <a href="https://drive.google.com/drive/folders/1_cuosdaaP8Ifa-8rny0yKacfvMnp4-zh?usp=drive_link"
+            class="document">document</a>
+        </div>
+      </article>
+      <!-- ผลงานที่3 -->
+      <article class="card">
+        <img src="imges/project3.png" alt="Project 3" class="img-project">
+        <div>
+          <h3>Game Roblox</h3>
+          <p>มีไอเดียที่อยากจะชุบเกมที่เราเคยรักกลับมาอีกครั้ง
+            แต่ไม่ใช้แบบเดิมแต่เป็นการเริ่มใหม่ทั้งหมดและปรับให้ทันกับยุคสมัยใหม่
+          </p>
+          <a href="https://www.roblox.com/th/games/124024432246371/start-place" class="demo">Demo</a> | <a
+            href="https://drive.google.com/drive/folders/1ctHio5aHfvvbMvulFF6Lcjqs4lwHldpK?usp=sharing"
+            class="document">document</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- experience  -->
+  <section id="exp" class="section">
+    <h2>Experience</h2>
+    <div class="exp-container">
+      <div class="exp-info">
+        <h3>มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</h3>
+        <p class="comment">ระดับปริญญาตรี</p>
+        <p class="comment">คณะ : วิศวกรรมศาสตร์</p>
+        <p class="comment">สาขา : วิศวกรรมไฟฟ้า</p>
+        <p class="comment">สาขาวิชา : วศ.บ.วิศวกรรมคอมพิวเตอร์</p>
+        <p class="comment">GPA : รอมหาวิทยาลัยออกให้ครับ (8/11/2025 )</p>
+        <p class="comment"><span class="highlight3">ประสบการณ์</span>: ช่วงซัมเมอร์ได้ฝึกงานครั้งที่สามเป็นผู้ช่วยช่าง
+          IT support Network </p>
+        <p class="comment"><span class="highlight3">ประสบการณ์</span>: ฝึกงานในช่วงปี 4 ได้ฝึกงานครั้งที่สี่เป็นช่าง
+          Network</p>
+        <p class="highlight2">Skill UNLOCK: IT support </p>
+        <p class="highlight2">Skill UNLOCK: Network admin </p>
+      </div>
+      <div class="exp-image">
+        <img src="imges/school3.png" alt="รูปภาพสถานศึกษา">
+      </div>
+    </div>
+
+    <div class="exp-container">
+      <div class="exp-info">
+        <h3>futureskill</h3>
+        <p class="comment">Manual Testing</p>
+        <p class="comment">certificate</p>
+        <p class="comment"><span class="highlight3">ประสบการณ์</span>: อาจารย์เคยบอกว่ามึตำแหน่งที่เรียกว่า QA Software
+          Tester เลยไปเรียนคอร์สออนไลน์ </p>
+      </div>
+      <div class="exp-image">
+        <img src="imges/school4.png" alt="รูปภาพสถานศึกษา">
+      </div>
+    </div>
+
+    <div class="exp-container">
+      <div class="exp-info">
+        <h3>วิทยาลัยเทคนิคเชียงใหม่</h3>
+        <p class="comment">ได้รับใบประกาศนียบัตรวิชาชีพ (ปวช)</p>
+        <p class="comment">สาขาวิชา : ช่างอิเล็กทรอนิกส์</p>
+        <p class="comment">สาขางาน : อิเล็กทรอนิกส์</p>
+        <p class="comment">GPA : 2.88</p>
+        <p class="comment"><span class="highlight3">ประสบการณ์</span>: ได้ฝึกงานครั้งแรกในตำแหน่งหน้าที่ ผู้ช่วยช่าง
+        </p>
+        <p class="highlight2">Skill UNLOCK: electronic technician </p>
+        <br>
+        <p class="comment">ได้รับใบประกาศนียบัตรวิชาชีพชั้นสูง (ปวช)</p>
+        <p class="comment">สาขาวิชา : เทคโนโลยีคอมพิวเตอร์</p>
+        <p class="comment">สาขางาน : คอมพิวเตอร์มัลติมีเดีย</p>
+        <p class="comment">GPA : 3.42</p>
+        <p class="comment"><span class="highlight3">ประสบการณ์</span>: ได้ฝึกงานครั้งที่สองในตำแหน่งหน้าที่ frontend
+          แต่เนื่องจากสถานะการ<br>โควิด-19
+          ทำให้ได้การฝึกเพียงไม่นานนัก </p>
+        <p class="highlight2">Skill UNLOCK: Multimedia Technician </p>
+        <p class="highlight2">Skill UNLOCK: frontend developer </p>
+      </div>
+      <div class="exp-image">
+        <img src="imges/school2.png" alt="รูปภาพสถานศึกษา">
+      </div>
+    </div>
+
+    <div class="exp-container">
+      <div class="exp-info">
+        <h3>โกวิทธํารงเชียงใหม่</h3>
+        <p class="comment">จบการศึกษาระดับชั้นมัธยมศึกษาที่ 3</p>
+        <p class="comment">GPA : 2.33</p>
+        <p class="comment"><span class="highlight3">ประสบการณ์</span>: ไม่มีอะไรพิเศษ เป็นเด็กติดเกมเฉยๆ</p>
+      </div>
+      <div class="exp-image">
+        <img src="imges/school.png" alt="รูปภาพสถานศึกษา">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>contact</h2>
+
+    <div class="all-contact">
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:trkorakot@gmail.com">Trkorakot@gmail.com</a>
+        |
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/Korakot2001" target="_blank">Korakot2001</a>
+        |
+        <i class="fa-brands fa-facebook"></i>
+        <a href="https://www.facebook.com/poh.korakot/" target="_blank">facebook</a>
+        |
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:0885921099">088-592-1099</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    © <span id="year"></span> Korakot. All rights reserved.
+  </footer>
+</body>
+
 </html>

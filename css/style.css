@@ -182,6 +182,67 @@ a{
     text-decoration: none;
     border-radius: 8px;
  }
+
+ /* experience */
+ .highlight2{
+    color: #4f46e5;
+    font-weight: bold;
+}
+ .highlight3{
+    color: #e54646;
+    font-weight: bold;
+}
+.exp-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.exp-info {
+  padding: 10px;
+}
+
+.exp-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.exp-image img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+/* contacn*/
+
+.all-contact {
+    text-align: center;
+}
+
+.all-contact a {
+  color: #000;               /* สีดำ */
+  text-decoration: none;     /* เอาเส้นใต้ลิงก์ออก */
+  transition: none;          /* ไม่เปลี่ยนสีตอน hover */
+  font-weight: bold;
+}
+
+.all-contact a:visited  i {
+  color: #000;               /* สีดำแม้เคยคลิกแล้ว */
+}
+
+.all-contact a:hover i{
+  color:#4f46e5;               /* hover ก็ยังสีดำ */
+}
+
+.all-contact i {
+  margin-right: 5px;         /* เว้นช่องระหว่าง icon กับข้อความ */
+}
+
 /* Footer */
 footer{
     text-align: center;
@@ -226,4 +287,15 @@ footer{
     background:#333;
   border-color:#555;
   color:#eee;
+}
+
+.dark-mode .all-contact a{
+    color: #f8f8f8;
+}
+
+.dark-mode .all-contact a:visited{
+    color: #f8f8f8;
+}
+.dark-mode .all-contact a:hover{
+    color: #4f46e5;
 }
