@@ -299,3 +299,7 @@ footer{
 .dark-mode .all-contact a:hover{
     color: #4f46e5;
 }
+
+.dark-mode .exp-container{
+    border: 1px solid  #f8f8f8;
+}
