@@ -303,3 +303,144 @@ footer{
 .dark-mode .exp-container{
     border: 1px solid  #f8f8f8;
 }
+
+/* ---------- Mobile layout ---------- */
+@media (max-width: 768px) {
+
+  /* 1) navbar: ซ้อนเป็นบล็อก ไม่เบียด */
+  .navbar nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .menu a,
+  .menu button {
+    font-size: 14px;
+  }
+
+  /* 2) hero: รูปบน ข้อความล่าง จัดกลางทั้งหมด */
+  .hero {
+    flex-direction: column;        /* จากเดิมแนวนอน -> เรียงลง */
+    align-items: center;           /* กลางแนวนอน */
+    text-align: center;            /* ตัวหนังสือกึ่งกลาง */
+    padding: 32px 16px;            /* ลด padding รอบๆ ให้พอดีจอเล็ก */
+  }
+
+  .hero img.profile {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    max-width: 320px;              /* ไม่ให้บรรทัดยาวเต็มจอ อ่านง่าย */
+    line-height: 1.5;
+    margin: 0 auto 1rem auto;
+    font-size: 0.95rem;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    margin-left: 0;                /* เอา margin-left 10px ของ desktop ออก */
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  /* 3) list ใต้ hero ("Software Tester ...") ถ้าอยู่ตรง hero ด้วย ให้จัดกลางด้วย */
+  .dot {
+    text-align: left;              /* ยังอ่านง่ายแบบ bullet ปกติ */
+    margin: 0 auto 12px auto;      /* จัดกล่องให้อยู่กลาง */
+    padding-left: 20px;            /* ให้จุด bullet มีระยะ ไม่ติดขอบซ้ายจอ */
+  }
+
+  /* 4) section ทั่วไป: ให้มีระยะขอบซ้ายขวา, จำกัดความกว้างเนื้อหาให้อ่านง่าย */
+  .section {
+    padding: 32px 16px;
+    max-width: 600px;
+  }
+
+  .section h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* 5) Skills: การ์ดสกิลให้เต็มแถวหรือ 2 คอลัมน์บนจอเล็ก */
+  .skills {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  /* 6) Project cards: ทำให้การ์ดกว้าง 100% เรียงลง 1 คอลัมน์ */
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* 7) Experience: จาก 2 คอลัมน์ -> 1 คอลัมน์ (ข้อความก่อน รูปทีหลัง) */
+  .exp-container {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .exp-image img {
+    max-width: 180px;
+  }
+
+  .exp-image {
+    margin-top: 12px;
+  }
+
+  /* 8) contact: จัดกลางและแตกบรรทัดได้ */
+  .all-contact p {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .all-contact a {
+    display: inline-block;
+    word-break: break-word;
+  }
+
+  /* 9) footer */
+  footer {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    padding: 16px;
+  }
+}
