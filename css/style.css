@@ -196,9 +196,10 @@ a{
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
-  border: 1px solid #000;
+  border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 12px;
 }
 
 .exp-info {
@@ -289,6 +290,12 @@ footer{
   color:#eee;
 }
 
+.dark-mode .exp-container{
+  background:#333;
+  border-color:#555;
+  color:#eee;
+}
+
 .dark-mode .all-contact a{
     color: #f8f8f8;
 }
@@ -298,10 +305,6 @@ footer{
 }
 .dark-mode .all-contact a:hover{
     color: #4f46e5;
-}
-
-.dark-mode .exp-container{
-    border: 1px solid  #f8f8f8;
 }
 
 /* ---------- Mobile layout ---------- */
